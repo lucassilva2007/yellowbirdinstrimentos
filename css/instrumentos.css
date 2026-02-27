@@ -1,0 +1,13 @@
+
+/* estrutura do site html */
+body {
+    background: linear-gradient(90deg,rgba(222, 198, 13, 1) 0%, rgb(94, 67, 8) 100%);
+
+}
+
+/* cabeçalho */
+header {
+    background:#bebcbc ;
+    width: 100% ;
+    height: 40% ;
+}
