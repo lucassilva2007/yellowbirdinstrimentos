@@ -4,6 +4,48 @@
 /* fontes utilizadas */
 
 
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Patua+One&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+/* vairaveis de fonts */
+:root{
+ --fonte-menu: "pt serif";
+ --fonte-subtitulo: "Breef serif";
+ --fonte-titulo: "patua one"
+}
+
+/* variavel de cores */
+:root {
+    --cor-destaque: #000000;
+}
+
+
+
+
+
+
+
+/* converter rem em px */
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+
+
 /* reset CSS= padronizar os navegadores  */
 
 *{
@@ -27,7 +69,7 @@ body {
 
 /* cabeçalho */
 header {
-    background:#bebcbc ;
+    background:#303030 ;
     width: 100% ;
     display: flex;
     justify-content: space-between;
@@ -46,18 +88,28 @@ display: flex;
 list-style: none;
 gap: 16px;
 }
+/* A Href = menu = meu link */
+.menu-link {
+    text-decoration: none;
+}
+.menu-link {
+    color: yellow;
+}
 
+.menu-texto {
+    color: yellow;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-family: var(--fonte-subtitulo)
 
-
-
-
+}
 
 
 h1 {
     font-size: 32px;
     text-align: center; /* centralizar texto */
-    background-color: #bebcbc;/* cor fundo */
-    color: #fff; /* cor texto */
+    background-color: #303030;/* cor fundo */
+    color: #ffffff; /* cor texto */
 }
 /* menu responsivo */
 
@@ -69,8 +121,6 @@ header {
     
     
 }
-
-
     .menu-desktop {
         display: flex;
 justify-content: end;
