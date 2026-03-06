@@ -19,10 +19,10 @@
 
 
 /* vairaveis de fonts */
-:root{
- --fonte-menu: "pt serif";
- --fonte-subtitulo: "Breef serif";
- --fonte-titulo: "patua one"
+:root {
+    --fonte-menu: "pt serif";
+    --fonte-subtitulo: "Breef serif";
+    --fonte-titulo: "patua one"
 }
 
 /* variavel de cores */
@@ -48,12 +48,12 @@ html {
 
 /* reset CSS= padronizar os navegadores  */
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-scrollbar-width: thin;
-scrollbar-color: transparent;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
 
 }
 
@@ -61,7 +61,7 @@ scrollbar-color: transparent;
 
 /* estrutura do site html */
 body {
-    background: linear-gradient(90deg,rgba(222, 198, 13, 1) 0%, rgb(94, 67, 8) 100%);
+    background: linear-gradient(90deg, rgba(222, 198, 13, 1) 0%, rgb(94, 67, 8) 100%);
 
 }
 
@@ -69,29 +69,31 @@ body {
 
 /* cabeçalho */
 header {
-    background:#303030 ;
-    width: 100% ;
+    background: #303030;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .menu-desktop {
-display: none;
-justify-content: center;
-align-items: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 /* menu UL */
 .menu {
-display: flex;
-list-style: none;
-gap: 16px;
+    display: flex;
+    list-style: none;
+    gap: 16px;
 }
+
 /* A Href = menu = meu link */
 .menu-link {
     text-decoration: none;
 }
+
 .menu-link {
     color: yellow;
 }
@@ -100,32 +102,47 @@ gap: 16px;
     color: yellow;
     text-transform: capitalize;
     font-size: 1.8rem;
-    font-family: var(--fonte-subtitulo)
-
+    font-family: var(--fonte-titulo)
 }
 
 
 h1 {
     font-size: 32px;
-    text-align: center; /* centralizar texto */
-    background-color: #303030;/* cor fundo */
-    color: #ffffff; /* cor texto */
+    text-align: center;
+    /* centralizar texto */
+    background-color: #303030;
+    /* cor fundo */
+    color: #ffffff;
+    /* cor texto */
 }
-/* menu responsivo */
 
+
+.logo img {
+    width: 12.5rem;
+    height: 12rem;
+}
+
+
+
+
+
+
+
+/* menu responsivo */
 /* a partir de telas grandes */
 @media (min-width:768px) {
-header {
-    padding: 1rem 6rem;
-    
-    
-    
-}
+    header {
+        padding: 1rem 6rem;
+
+
+
+    }
+
     .menu-desktop {
         display: flex;
-justify-content: end;
-align-items: center;
-margin: auto;
+        justify-content: end;
+        align-items: center;
+        margin: auto;
 
     }
 }
