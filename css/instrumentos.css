@@ -24,15 +24,37 @@
     --fonte-subtitulo: "Breef serif";
     --fonte-titulo: "patua one"
 }
-
-/* variavel de cores */
-:root {
-    --cor-destaque: #000000;
+/* filtro cor logo */
+html[data-theme='dark'] .logo {
+    filter: invert(1);
 }
 
 
 
 
+
+
+/* variavel de cores */
+
+/* tema escuro */
+:root, :root[data-theme='dark'] {
+    
+    --cor-fundo: #000;  
+    --cor-fundo-sec: #aaa;
+    --cor-txt-menu: #fff;
+    --cor-destaque: yellow;
+}
+
+/* tema claro */
+
+:root, :root[data-theme='light'] {
+
+    --cor-fundo: #fff;
+    --cor-fundosec: #aaa;
+    --cor-txt-menu: #000;   
+    --cor-destaque: #929746;
+}
+    
 
 
 
@@ -61,7 +83,7 @@ html {
 
 /* estrutura do site html */
 body {
-    background: linear-gradient(90deg, rgba(222, 198, 13, 1) 0%, rgb(94, 67, 8) 100%);
+    background-color: var(--cor-fundo);
 
 }
 
@@ -95,26 +117,38 @@ header {
 }
 
 .menu-link {
-    color: yellow;
+    color: rgb(160, 160, 36);
 }
 
 .menu-texto {
-    color: yellow;
+    color: var(--cor-txt-menu);
     text-transform: capitalize;
     font-size: 1.8rem;
     font-family: var(--fonte-titulo)
+    
+}
+
+.header-toggle {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #000;
+
+
+
+
 }
 
 
-h1 {
+
+h1 { /* cabeçalho */
     font-size: 32px;
     text-align: center;
-    /* centralizar texto */
+    /* cor fundo */
     background-color: #303030;
     font-family: "patua one";
-    /* cor fundo */
+    /* cor letras cabeçalho */
     color: yellow;
-    /* cor texto */
+    
 }
 
 

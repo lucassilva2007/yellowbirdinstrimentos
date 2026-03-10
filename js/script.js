@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded',() => {
         
         rootHtml.setAttribute('data-theme', isDark ? 'light':'dark' );
         //troca do icone
-        toggleTheme.classList.toggle('bi-sun', ! isDark );
-        toggleTheme.classList.toggle('bi-moon', 'isDark');
+        toggleTheme.classList.toggle('bi-sun', !isDark );
+        toggleTheme.classList.toggle('bi-moon', isDark);
     
     
     
