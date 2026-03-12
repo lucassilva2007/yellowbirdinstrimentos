@@ -40,9 +40,12 @@ html[data-theme='dark'] .logo {
 :root, :root[data-theme='dark'] {
     
     --cor-fundo: #000;  
-    --cor-fundo-sec: #aaa;
-    --cor-txt-menu: #fff;
-    --cor-destaque: yellow;
+    --cor-fundo-sec: #ffffff;
+    --cor-txt-menu:#fffb00 ;
+    --cor-destaque: #ffffff;
+
+    --cor-titulo: #fffb00;
+
 }
 
 /* tema claro */
@@ -50,9 +53,12 @@ html[data-theme='dark'] .logo {
 :root, :root[data-theme='light'] {
 
     --cor-fundo: #fff;
-    --cor-fundosec: #aaa;
-    --cor-txt-menu: #000;   
-    --cor-destaque: #929746;
+    --cor-fundosec: #ffffff;
+    --cor-txt-menu: #fffb00;   
+    --cor-destaque:#ffffff;
+
+    --cor-titulo: #999999;
+
 }
     
 
@@ -144,7 +150,7 @@ h1 { /* cabeçalho */
     font-size: 32px;
     text-align: center;
     /* cor fundo */
-    background-color: #303030;
+    
     font-family: "patua one";
     /* cor letras cabeçalho */
     color: yellow;
@@ -159,16 +165,38 @@ h1 { /* cabeçalho */
 
 /* herança */
 .menu-link.active .menu-texto,
-.menu-link.hover .menu-texto {
+.menu-link:hover .menu-texto {  
     color: var(--cor-destaque);
 
 }
 
 
+/* hero= home */
+    h1{
+        color: var(--cor-titulo); /* cor texto */
 
+    }
 
 
 /* menu responsivo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* a partir de telas grandes */
 @media (min-width:768px) {
     header {
