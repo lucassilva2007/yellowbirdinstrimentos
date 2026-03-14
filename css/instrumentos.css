@@ -45,7 +45,7 @@ html[data-theme='dark'] .logo {
     --cor-destaque: #ffffff;
 
     --cor-titulo: #fffb00;
-
+    --cor-icone-rede: #e2e2cf;
 }
 
 /* tema claro */
@@ -58,7 +58,7 @@ html[data-theme='dark'] .logo {
     --cor-destaque:#ffffff;
 
     --cor-titulo: #999999;
-
+    --cor-icone-rede: #e2e2cf;
 }
     
 
@@ -130,7 +130,7 @@ header {
     color: var(--cor-txt-menu);
     text-transform: capitalize;
     font-size: 1.8rem;
-    font-family: var(--fonte-titulo)
+    font-family: var(--fonte-menu)
     
 }
 
@@ -161,12 +161,16 @@ h1 { /* cabeçalho */
 .logo img {
     width: 12.5rem;
     height: 12rem;
+    color: #fbff00;
+    
 }
 
 /* herança */
 .menu-link.active .menu-texto,
 .menu-link:hover .menu-texto {  
     color: var(--cor-destaque);
+    
+    
 
 }
 
@@ -175,8 +179,60 @@ h1 { /* cabeçalho */
     h1{
         color: var(--cor-titulo); /* cor texto */
 
+        font-size: 2.5rem;
+        font-weight: 100;
+        font-family: var(--fonte-menu);
+
+    }
+    /* tamanho do texto */
+    strong{
+        font-weight: 800;
+
+    }
+    p {
+        color: var(--cor-titulo);
+        font-size: 1.8rem;
+        font-family: var(--fonte-menu);
+        
+    }
+/* redes sociais */
+
+.menu-social {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+    padding: 0; 
+    margin: 25px;
+    
+}
+
+    .menu-social .social-icon {
+        color: var(--cor-titulo);
+        color: #000;
+        font-size: 2rem;
+        background: #fbff00;
+        padding: 5px 10px;
+        border-radius: 25%;
+        transition: ease-out .5s;
     }
 
+.menu-social .social-icon:hover {
+    color: var(--cor-icone-rede);
+}
+
+/* carrocel */
+
+/* estrutura slides */
+    .carousel .carousel-item {
+        height: 80vh;
+        min-height: 400px;
+    }
+    /* tamanho das imagens */
+    .carousel .carousel-item img,
+    .carousel .carousel-item .ratio {
+        height: 100%;
+        object-fit: cover;
+    }
 
 /* menu responsivo */
 
