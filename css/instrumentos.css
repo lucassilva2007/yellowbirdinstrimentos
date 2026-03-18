@@ -46,6 +46,7 @@ html[data-theme='dark'] .logo {
 
     --cor-titulo: #fffb00;
     --cor-icone-rede: #e2e2cf;
+    --linha-home: 
 }
 
 /* tema claro */
@@ -102,6 +103,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 200;
+    padding: 0.5rem  1rem;  
+    
+
 }
 
 .menu-desktop {
@@ -162,6 +168,7 @@ h1 { /* cabeçalho */
     width: 12.5rem;
     height: 12rem;
     color: #fbff00;
+    
     
 }
 
@@ -278,48 +285,62 @@ h1 { /* cabeçalho */
 
 
 /* video */
-    .video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+   .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+    width: 95%;
+    box-shadow: 0 15px 15px -2px #fff;
+}
+
+.complemento {
+    display: flex;
+    background: rgb(158, 144, 144);
+    padding: 6rem 1rem 2rem;
+    margin-top: -5rem;
+    justify-content: center;
+
+}
+
+.complemento h2 {
+    font-size: 2rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 500;
+    font-family: var(--fonte-padrao);
+}
+
+/* seção geral */
+/* volar aqui mais tarde */
+    #home {
+        padding: 4rem 6rem 4rem 6rem;
+
     }
-    .video iframe {
-        aspect-ratio: 16/9;
-        width: 70vw;
-    }
-
-    .complemento {
-        display: flex ;
-        background: red;
-        padding: 6rem 1rem 2rem;
-        margin-top: -5rem;
-    }
-
-    .complemento h2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing:normal ;
-        font-weight: 500;
-        font-family: var(--fonte-subtitulo);
-    }
-
-
-
 
 
 
 
 
 /* menu responsivo */
+@media (max-width:768px) {
+    .carousel .carousel-inner {
+        margin-top: -2rem;
+    }
+    #home {
+        padding: 1rem 6rem;
+    }
 
+
+}
 
 /* a partir de telas grandes */
 @media (min-width:768px) {
     header {
         padding: 1rem 6rem;
-
-
-
     }
 
     .menu-desktop {
@@ -329,4 +350,33 @@ h1 { /* cabeçalho */
         margin: auto;
 
     }
+
+    .carousel .carousel-inner {
+        margin-top: -4.2rem ;
+        padding-top: 7rem;
+
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    h1 {
+        font-size: 5rem;
+
+    }
+
 }
+
+
+
+/* telas maiores que 1400px */
+@media (min-width: 1400px){
+    h1{
+        font-size: 6.5rem;
+    }
+}
+    
+    
