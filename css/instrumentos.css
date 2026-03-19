@@ -46,7 +46,7 @@ html[data-theme='dark'] .logo {
 
     --cor-titulo: #fffb00;
     --cor-icone-rede: #e2e2cf;
-    --linha-home: 
+    --linha-home: #fffb00;
 }
 
 /* tema claro */
@@ -60,6 +60,7 @@ html[data-theme='dark'] .logo {
 
     --cor-titulo: #999999;
     --cor-icone-rede: #e2e2cf;
+    --linha-home: #ffee00;
 }
     
 
@@ -106,7 +107,7 @@ header {
     position: fixed;
     z-index: 200;
     padding: 0.5rem  1rem;  
-    
+    border-bottom:2px solid  var(--linha-home)
 
 }
 
@@ -136,7 +137,8 @@ header {
     color: var(--cor-txt-menu);
     text-transform: capitalize;
     font-size: 1.8rem;
-    font-family: var(--fonte-menu)
+    font-family: var(--fonte-menu);
+    font-weight: 600;
     
 }
 
@@ -159,7 +161,7 @@ h1 { /* cabeçalho */
     
     font-family: "patua one";
     /* cor letras cabeçalho */
-    color: yellow;
+    color: rgb(0, 0, 0);
     
 }
 
@@ -247,7 +249,7 @@ h1 { /* cabeçalho */
     /* pseudo elemento */
     .carousel .carousel-item::before {
         content: "";
-        background: rgba(109, 106, 106, 0.308);
+        background: rgba(255, 255, 255, 0.308);
         position: absolute;
         inset: 0;
         
@@ -294,15 +296,16 @@ h1 { /* cabeçalho */
 .video iframe {
     aspect-ratio: 16/9;
     width: 95%;
-    box-shadow: 0 15px 15px -2px #fff;
+    box-shadow: 0 15px 15px -2px #ffee00;
 }
 
 .complemento {
     display: flex;
-    background: rgb(158, 144, 144);
+    background: rgb(252, 247, 1);
     padding: 6rem 1rem 2rem;
     margin-top: -5rem;
     justify-content: center;
+    color: #000000;
 
 }
 
@@ -312,71 +315,125 @@ h1 { /* cabeçalho */
     letter-spacing: normal;
     font-weight: 500;
     font-family: var(--fonte-padrao);
+    color: #000000;
 }
 
 /* seção geral */
 /* volar aqui mais tarde */
-    #home {
-        padding: 4rem 6rem 4rem 6rem;
+   #home {
+    padding: 4rem 2rem;
+}
+
+
+/* projetos */
+    .instrumentos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* voltar */
+        scroll-margin-top: ;
+
+
+
 
     }
+.instrumentos h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--fonte-titulo);
+    color: #ffee00;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* Empurra o video */
+    margin-bottom: 5rem;
+}
 
 
 
 
 
-/* menu responsivo */
-@media (max-width:768px) {
+
+
+/* Responsivo */
+
+/* Largura ate */
+@media (max-width: 768px) {
     .carousel .carousel-inner {
         margin-top: -2rem;
     }
-    #home {
-        padding: 1rem 6rem;
-    }
 
+    #home {
+        padding-top: 6rem;
+    }
 
 }
 
-/* a partir de telas grandes */
+
+
+/* A partir de Telas Grandes */
 @media (min-width:768px) {
+
     header {
-        padding: 1rem 6rem;
+        padding: 1rem 10rem;
+        justify-content: flex-start;
+        gap: 2rem;
     }
 
     .menu-desktop {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
-        margin: auto;
+    }
 
+    .logo {
+        margin-right: auto;
     }
 
     .carousel .carousel-inner {
-        margin-top: -4.2rem ;
+        margin-top: -4.2rem;
         padding-top: 7rem;
+    }
 
+    /* Voltar Aqui */
+    #home {
+        padding: 4rem 10rem;
     }
 
     .main-content {
         display: flex;
         flex-direction: column;
-
+        align-items: flex-start;
     }
 
     h1 {
         font-size: 5rem;
-
     }
 
 }
 
-
-
-/* telas maiores que 1400px */
-@media (min-width: 1400px){
-    h1{
+/* Telas maiores que 1400px */
+@media (min-width: 1400px) {
+    h1 {
         font-size: 6.5rem;
     }
+
+    /* Voltar aqui */
+    .complemento {
+        padding: 5rem 7rem 4rem;
+        margin-top: -7rem;
+    }
+
+    .complemento h2 {
+        font-size: 4.5rem;
+    }
 }
-    
-    
