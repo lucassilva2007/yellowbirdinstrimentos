@@ -374,6 +374,7 @@ p {
     gap: 2rem;
     /* voltar */
     /* colocar "scroll margin top" */
+    
 }
 
 .inicio h2 {
@@ -399,6 +400,7 @@ p {
     color: #ffee00;
     font-weight: 400;
     text-transform: uppercase;
+    scroll-margin-top: 25;
 }
 
 
