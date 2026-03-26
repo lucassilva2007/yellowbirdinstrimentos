@@ -265,6 +265,8 @@ p {
     }   
     .contato-mapa {
         width: 100%;
+        display: flex;
+        
         
     }
     .contato-mapa iframe {
@@ -448,20 +450,48 @@ p {
     margin-bottom: 5rem;
 
 }
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-contato input {
+    width: 100%;
+    background-color: var(--cor-destaque);
+    font-size: 1.8rem;
+    color: var(--cor-txt-menu);
+}
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder{
+    color: #303030;
+}
+
 
 
 /* Responsivo */
 
 /* Largura ate */
+@media (min-width: 1199px) {
+    
+}
+
 @media (max-width: 768px) {
     .carousel .carousel-inner {
         margin-top: -2rem;
+        
     }
 
     #home {
         padding-top: 6rem;
     }
 
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+    .contato-mapa {
+        display: flex;
+    }
 }
 
 /* Telas a partir de 992 */
