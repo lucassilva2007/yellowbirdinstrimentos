@@ -75,14 +75,41 @@
             <i class="bi bi-sun" id="toggleTheme"></i>
         </div>
 
-        <!-- botão mobile hamburguer -->
-        <button>
+        <!-- Botao Mobile Hamburger -->
+
+        <button class="btn-menu-mobile" id="menuHamburger">
             <i class="bi bi-list"></i>
         </button>
+        </div>
 
     </header>
 
-
+    <!-- Menu Mobile -->
+    <nav class="menu-mobile" id="menuMobile">
+        <!-- Menu vira Vertical -->
+        <ul class="menu-lista">
+            <li>
+                <a href="#home" class="menu-link active">
+                    <span class="menu-texto">home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">
+                    <span class="menu-texto">Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="menu-link">
+                    <span class="menu-texto">sobre</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">
+                    <span class="menu-texto">contato</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 
 
@@ -155,113 +182,107 @@
 
     <!-- Nova Seção -->
     <section id="projetos" class="projetos">
-      <h2>Projetos</h2>
+        <h2>Nossos Produtos</h2>
 
-      <div class="projeto-container">
-        <!-- Projeto 1 -->
-        <article class="projeto-card">
-          <img
-            src="img/imgcentro3.jpg"
-            alt="Desenvolvedora em um escritório testando o design responsivo do painel DevLearn em um monitor, notebook, tablet e smartphone simultaneamente."
-            class="card-cover"
-          />
+        <div class="projeto-container">
+            <!-- Projeto 1 -->
+            <article class="projeto-card">
+                <img src="img/imgcentro3.jpg"
+                    alt="Desenvolvedora em um escritório testando o design responsivo do painel DevLearn em um monitor, notebook, tablet e smartphone simultaneamente."
+                    class="card-cover" />
 
-          <div class="card-body">
-            <h3 class="card-title">Projetos Web Responsivos</h3>
+                <div class="card-body">
+                    <h3 class="card-title">Instrumentos elétricos</h3>
 
-            <p class="card-description">
-              Plataforma de aprendizado DevLearn com um painel de cursos
-              adaptável. O layout adapta perfeitamente o progresso do curso e o
-              conteúdo modular como React Native, UI Design e Git garantindo uma
-              experiência de aprendizado consistente em todos os dispositivos,
-              conforme visualizado nesta cena de co-working tech.
-            </p>
+                    <p class="card-description">
+                        Eleve seu som com guitarras, baixos e teclados de alta performance e timbre impecável. Unimos
+                        design icônico à tecnologia de ponta para garantir potência e versatilidade em qualquer palco ou
+                        estúdio.
+                    </p>
 
-            <ul class="card-lista">
-              <li class="card-item">
-                <i class="bi bi-display"></i>
-                <span>Amostra de Adaptação Multitela</span>
-              </li>
-              <li class="card-item">
-                <i class="bi bi-grid-3x3-gap"></i>
-                <span>Visualização Modular de Cursos</span>
-              </li>
-              <li class="card-item">
-                <i class="bi bi-tools"></i>
-                <span>Ferramentas de Desenvolvimento Modernas</span>
-              </li>
-            </ul>
-          </div>
-        </article>
+                    <ul class="card-lista">
+                        <li class="card-item">
+                            <i class="bi bi-display"></i>
+                            <span>Amostra de Adaptação Multitela</span>
+                        </li>
+                        <li class="card-item">
+                            <i class="bi bi-grid-3x3-gap"></i>
+                            <span>Visualização Modular de Cursos</span>
+                        </li>
+                        <li class="card-item">
+                            <i class="bi bi-tools"></i>
+                            <span>Ferramentas de Desenvolvimento Modernas</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-        <!-- Projeto 2 -->
-        <article class="projeto-card card-reverse">
-          <img
-            src="img/carrosel 4.jpg"
-            alt="Apresentação de design de site responsivo para a marca 'Industrial Tools', exibido simultaneamente em um laptop, tablet e smartphone com a mesma paleta de cores laranja e preto."
-            class="card-cover"
-          />
+            <!-- Projeto 2 -->
+            <article class="projeto-card card-reverse">
+                <img src="img/carrosel 4.jpg"
+                    alt="Apresentação de design de site responsivo para a marca 'Industrial Tools', exibido simultaneamente em um laptop, tablet e smartphone com a mesma paleta de cores laranja e preto."
+                    class="card-cover" />
 
-          <div class="card-body">
-            <h3 class="card-title">Interface Web</h3>
+                <div class="card-body">
+                    <h3 class="card-title">acessorios musicais</h3>
 
-            <p class="card-description">
-              Desenvolvemos cartões de produto intuitivos para a Ferroforte,
-              destacando especificações de serras, brocas e prensas para fácil
-              visualização em um dashboard central.
-            </p>
+                    <p class="card-description">
+                        Microfones e Acessórios
+                        Capture cada nuance da sua voz ou instrumento com microfones de fidelidade profissional. Nossa
+                        linha de acessórios inclui desde cabos blindados até suportes resistentes, garantindo uma cadeia
+                        de sinal limpa e sem interferências. Invista na clareza que seu talento merece e eleve o padrão
+                        das suas gravações e apresentações ao vivo.
+                    </p>
 
-            <ul class="card-lista">
-              <li class="card-item">
-                <i class="bi bi-stack"></i>
-                <span>Grade de Produtos Dinâmica</span>
-              </li>
-              <li class="card-item">
-                <i class="bi bi-tools"></i>
-                <span>Categorias de Alta Precisão</span>
-              </li>
-              <li class="card-item">
-                <i class="bi bi-eye"></i>
-                <span>Visualização de Detalhes Otimizada</span>
-              </li>
-            </ul>
-          </div>
-        </article>
+                    <ul class="card-lista">
+                        <li class="card-item">
+                            <i class="bi bi-stack"></i>
+                            <span>Grade de Produtos Dinâmica</span>
+                        </li>
+                        <li class="card-item">
+                            <i class="bi bi-tools"></i>
+                            <span>Categorias de Alta Precisão</span>
+                        </li>
+                        <li class="card-item">
+                            <i class="bi bi-eye"></i>
+                            <span>Visualização de Detalhes Otimizada</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-        <!-- Projeto 3 -->
-        <article class="projeto-card">
-          <img
-            src="img/imgcentro1.jpg"
-            alt="Apresentação de design responsivo contendo um monitor, notebook, tablet e celular exibindo o design responsivo de uma página de marketing digital com o título 'Impulsione Seu Negócio!'."
-            class="card-cover"
-          />
+            <!-- Projeto 3 -->
+            <article class="projeto-card">
+                <img src="img/imgcentro1.jpg"
+                    alt="Apresentação de design responsivo contendo um monitor, notebook, tablet e celular exibindo o design responsivo de uma página de marketing digital com o título 'Impulsione Seu Negócio!'."
+                    class="card-cover" />
 
-          <div class="card-body">
-            <h3 class="card-title">Adaptação de Layout Multi-dispositivo</h3>
+                <div class="card-body">
+                    <h3 class="card-title">Instrumentos de Percussão</h3>
 
-            <p class="card-description">
-              Nossos projetos web se adaptam fluidamente de desktops expandidos
-              para layouts condensados em tablets e vistas verticais em
-              celulares, garantindo usabilidade total.
-            </p>
+                    <p class="card-description">
+                        Domine o ritmo com baterias e instrumentos percussivos de máxima ressonância e durabilidade.
+                        Projetados para entregar projeção sonora superior, são a escolha ideal para quem dita o tempo
+                        com alma.
+                    </p>
 
-            <ul class="card-lista">
-              <li class="card-item">
-                <i class="bi bi-display"></i>
-                <span>Layout de Desktop Expandido</span>
-              </li>
-              <li class="card-item">
-                <i class="bi bi-tablet-landscape"></i>
-                <span>Layout de Tablet Condensado</span>
-              </li>
-              <li class="card-item">
-                <i class="bi bi-phone"></i>
-                <span>Layout de Mobile Vertical</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </div>
+                    <ul class="card-lista">
+                        <li class="card-item">
+                            <i class="bi bi-display"></i>
+                            <span>Layout de Desktop Expandido</span>
+                        </li>
+                        <li class="card-item">
+                            <i class="bi bi-tablet-landscape"></i>
+                            <span>Layout de Tablet Condensado</span>
+                        </li>
+                        <li class="card-item">
+                            <i class="bi bi-phone"></i>
+                            <span>Layout de Mobile Vertical</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
     </section>
 
 
@@ -287,7 +308,7 @@
     <script src="js/script.js"></script>
 
 
-    
+
     <!-- VIDEO -->
     <div class="video">
         <iframe src="https://www.youtube.com/embed/e-J7KdBsnEU"
@@ -299,44 +320,43 @@
 
 
     <!-- contato -->
-   
+
 
 
     <!-- formulario -->
     <div class="contato-grid">
         <div class="contato-formulario">
-        <section class="contato" id="contato">
+            <section class="contato" id="contato">
                 <h4>Contato</h4>
                 <p>dúvidas, sujestões, parcerias, por favor entrar em contato por e-mail ou pelas redes sociais.</p>
-            
-            <h5>fale comigo</h5>
-            
-            <!-- forms -->
-            <form action="https://formspree.io/f/xgopwkqe" method="POST">
-                <label>
-                    Seu e-mail:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    sua mensagem (favor, expecificar o motivo do contato.):
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
+
+                <h5>fale comigo</h5>
+
+                <!-- forms -->
+                <form action="https://formspree.io/f/xgopwkqe" method="POST">
+                    <label>
+                        Seu e-mail:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        sua mensagem (favor, expecificar o motivo do contato.):
+                        <textarea name="message"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
         </div>
         </section>
         <!-- mapa -->
-         <div class="contato-mapa">
+        <div class="contato-mapa">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101324.73286444892!2d-46.81716180534057!3d-23.521480397683643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b811e8e3a1%3A0xa7564bb4c78f41b3!2sSenai%20Vila%20Leopoldina%20-%20Mariano%20Ferraz!5e0!3m2!1spt-BR!2sbr!4v1774397642602!5m2!1spt-BR!2sbr"
-                 allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        
+
         </div>
-        
-    
+
+
     </div>
     <!-- REDES SOCIAIS -->
     <ul class="menu-social">
