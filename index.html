@@ -187,9 +187,7 @@
         <div class="projeto-container">
             <!-- Projeto 1 -->
             <article class="projeto-card">
-                <img src="img/imgcentro3.jpg"
-                    alt="Desenvolvedora em um escritório testando o design responsivo do painel DevLearn em um monitor, notebook, tablet e smartphone simultaneamente."
-                    class="card-cover" />
+                <img src="img/imgcentro3.jpg" alt="" class="card-cover" />
 
                 <div class="card-body">
                     <h3 class="card-title">Instrumentos elétricos</h3>
@@ -219,9 +217,7 @@
 
             <!-- Projeto 2 -->
             <article class="projeto-card card-reverse">
-                <img src="img/carrosel 4.jpg"
-                    alt="Apresentação de design de site responsivo para a marca 'Industrial Tools', exibido simultaneamente em um laptop, tablet e smartphone com a mesma paleta de cores laranja e preto."
-                    class="card-cover" />
+                <img src="img/carrosel 4.jpg" alt="" class="card-cover" />
 
                 <div class="card-body">
                     <h3 class="card-title">acessorios musicais</h3>
@@ -253,9 +249,7 @@
 
             <!-- Projeto 3 -->
             <article class="projeto-card">
-                <img src="img/imgcentro1.jpg"
-                    alt="Apresentação de design responsivo contendo um monitor, notebook, tablet e celular exibindo o design responsivo de uma página de marketing digital com o título 'Impulsione Seu Negócio!'."
-                    class="card-cover" />
+                <img src="img/imgcentro1.jpg" alt="" class="card-cover" />
 
                 <div class="card-body">
                     <h3 class="card-title">Instrumentos de Percussão</h3>
@@ -294,9 +288,13 @@
     <div class="main-content"></div>
 
 
-
-
-
+    <ul class="menu-loja">
+        <li>
+            <a href="https://phxinstrumentos.com.br/" class="menu-link"><i class="social-icon bi bi-shop-window"
+                    target="_blank"></i>
+                <span> loja </span></a>
+        </li>
+    </ul>
 
 
 
@@ -320,43 +318,47 @@
 
 
     <!-- contato -->
+    <section>
 
 
+        <div class="contato-grid">
+            <!-- Formulario -->
+            <div class="contato-formulario">
+                <h2>Fale Conosco</h2>
 
-    <!-- formulario -->
-    <div class="contato-grid">
-        <div class="contato-formulario">
-            <section class="contato" id="contato">
-                <h4>Contato</h4>
-                <p>dúvidas, sujestões, parcerias, por favor entrar em contato por e-mail ou pelas redes sociais.</p>
+                <!-- Forms -->
+                <form action="https://formspree.io/f/xqegzqnn" method="POST" class="form-contato">
+                    <!-- Entrada NOME -->
+                    <input type="text" name="nome" placeholder="Nome Completo *" required />
 
-                <h5>fale comigo</h5>
+                    <!-- Email -->
+                    <input type="email" name="email" placeholder="Email *" required />
 
-                <!-- forms -->
-                <form action="https://formspree.io/f/xgopwkqe" method="POST">
-                    <label>
-                        Seu e-mail:
-                        <input type="email" name="email">
-                    </label>
-                    <label>
-                        sua mensagem (favor, expecificar o motivo do contato.):
-                        <textarea name="message"></textarea>
-                    </label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
+                    <!-- Telefone -->
+                    <input type="tel" name="telefone" placeholder="Seu WhatsApp" required />
+
+                    <!-- Assunto -->
+                    <input type="text" name="assunto" placeholder="Assunto" required />
+
+                    <!-- Mensagem -->
+                    <textarea name="mensagem" placeholder="Digite sua mensagem aqui" required rows="6"></textarea>
+
+                    <button type="submit">
+                        <span>Enviar</span>
+                        <i class="bi bi-send"></i>
+                    </button>
                 </form>
-        </div>
-        </section>
-        <!-- mapa -->
-        <div class="contato-mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101324.73286444892!2d-46.81716180534057!3d-23.521480397683643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b811e8e3a1%3A0xa7564bb4c78f41b3!2sSenai%20Vila%20Leopoldina%20-%20Mariano%20Ferraz!5e0!3m2!1spt-BR!2sbr!4v1774397642602!5m2!1spt-BR!2sbr"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            </div>
+            <!-- mapa -->
+            <div class="contato-mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1604245809185!2d-46.73848682496852!3d-23.526731760320363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b811e8e3a1%3A0xa7564bb4c78f41b3!2sSenai%20Vila%20Leopoldina%20-%20Mariano%20Ferraz!5e0!3m2!1spt-BR!2sbr!4v1774633978503!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        </div>
+            </div>
 
-
+    </section>
     </div>
     <!-- REDES SOCIAIS -->
     <ul class="menu-social">

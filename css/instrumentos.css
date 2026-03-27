@@ -278,62 +278,152 @@ p {
 }
 
 /* articls da aba instrumentos */
-.instrumentos-card {
-    display: flex;
-    flex-direction: column;
 
-}
-
-.instrumentos-cover {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5rem;
-}
- 
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+}
+/* contato */
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  border-top: 1px solid var(--cor-txt-menu);
+  border-bottom: 1px solid var(--cor-borda);
+  scroll-margin-top: 3.5rem;
+}
+
+.contato h2 {
+  color: var(--cor-txt-menu);
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--fonte-padrao);
+  text-transform: uppercase;
+}
+
+.contato .menu-social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contato span {
+  color: var(--cor-titulo);
+  font-size: 2.2rem;
+  margin-left: 5px;
+  font-family: var(--fonte-padrao);
+}
+
+/* Grid CSS */
+.contato-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.contato-formulario,
+.contato-mapa {
+  width: 90%;
+}
+
+.contato-mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px -2px #ffffff89;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Inputs */
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  /* Cor fundo secundaria */
+  background-color: var(--cor-txt-menu);
+  font-size: 1.8rem;
+  /* aumenta a distancia interna */
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--cor-txt-menu);
+}
+
+/* Pseudo elemento */
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+  /* Cor com Transparencia */
+  color: #8686867b;
+  font-size: 1.8rem;
 }
 
 
+.form-contato button {
+  border: 0;
+  background-color: var(--cor-fundo-secundaria);
+  align-items: center;
+  /* Adapta ao Conteudo */
+  align-self: flex-start;
+  gap: 2rem;
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 5px 5px 5px #b3b3b36b;
+}
 
-/* contato */
-    .contato {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.8rem;
-        border-top: 1px solid rgb(251, 255, 0);
-        margin-top: 3rem;
+.form-contato button i, 
+.form-contato button span {
+  color: var(--cor-titulo);
+} 
 
-    }
-    .contato h4 {
-        color: var(--cor-txt-menu);
-        font-size: 3rem;
+.form-contato button:hover {
+  filter: brightness(1.5);
+  transition: ease-in-out 0.3s;
+  background-color: #7a81858f;
+  transform: scale(1.03);
+}
 
-    }
-/* grid css */
-    .contato-grid {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 2rem;
-        width: 100%;
-        margin-top: 5rem;
-    }   
-    .contato-mapa {
-        width: 100%;
-        display: flex;
-        
-        
-    }
-    .contato-mapa iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 0.5rem;
-    }
+.form-contato button i {
+  font-size: 2rem;
+}
+
+/* primeiro click-loja */
+.menu-loja {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    padding: 0;
+    margin: 45px;
+    align-items: center;
+
+}
+
+.menu-loja .social-icon {
+    color: var(--cor-titulo);
+    color: #000;
+    font-size: 4rem;
+    background: #fbff00;
+    padding: 5px 10px;
+    border-radius: 25%;
+    transition: ease-out .5s;
+}
+
+.menu-loja .social-icon:hover {
+    color: var(--cor-icone-rede);
+}
+
+
 /* redes sociais */
 
 .menu-social {
@@ -433,24 +523,7 @@ p {
     box-shadow: 0 15px 15px -2px #ffee00;
 }
 
-.complemento {
-    display: flex;
 
-    padding: 6rem 1rem 2rem;
-    margin-top: -5rem;
-    justify-content: center;
-    color: #000000;
-
-}
-
-.complemento h2 {
-    font-size: 2rem;
-    text-transform: none;
-    letter-spacing: normal;
-    font-weight: 500;
-    font-family: var(--fonte-padrao);
-    color: #000000;
-}
 
 /* seção geral */
 /* volar aqui mais tarde */
@@ -493,7 +566,7 @@ p {
   text-align: center;
   font-size: 2.5rem;
   font-family: var(--fonte-subtitulo);
-  color: var(--cor-txt-menu);
+  color: var(--cor-titulo);
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -693,14 +766,18 @@ p {
     h1 {
         font-size: 5rem;
     }
+    .projetos h2,
+  .contato h2 {
+    font-size: 3.5rem;
+  }
 
 }
-/* telas maiores que 1200px */
-    
+/* Telas maiores que 1200 */
 @media (min-width: 1200px) {
-    .contato {
-        font-size: 3rem;
-    }
+  .projetos h2,
+  .contato h2 {
+    font-size: 4rem;
+  }
 }
     
 
