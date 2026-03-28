@@ -676,6 +676,19 @@ p {
     color: #303030;
 }
 
+/* footer - roda pé */
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    .footer p {
+        padding: 2rem 0;
+    }
+    font a {
+        text-decoration: none;
+        color: var(--cor-fundo);
+    }
+
 
 
 /* Responsivo */
@@ -780,12 +793,6 @@ p {
   }
 }
     
-
-
-
-
-
-
 
 /* Telas maiores que 1400px */
 @media (min-width: 1400px) {
